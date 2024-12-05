@@ -18,8 +18,8 @@ p44maintd_VERSION = -DP44_APPLICATION_VERSION=\"$(APPLICATION_VERSION)\"
 endif
 
 
-p44maintd_LDADD = ${JSONC_LIBS} ${PTHREAD_CFLAGS} ${PTHREAD_LIBS} ${SQLITE3_LIBS} ${PROTOBUFC_LIBS}
-p44maintd_EXTRACFLAGS = -D NO_SSL_DL=1 -D BOOST_BIND_GLOBAL_PLACEHOLDERS=1
+p44maintd_LDADD = ${JSONC_LIBS} ${PTHREAD_CFLAGS} ${PTHREAD_LIBS}
+p44maintd_EXTRACFLAGS = -D BOOST_BIND_GLOBAL_PLACEHOLDERS=1
 
 
 p44maintd_CPPFLAGS = \
@@ -42,13 +42,6 @@ noinst_HEADERS = \
 
 
 p44maintd_SOURCES = \
-  src/p44utils/thirdparty/civetweb/civetweb.c \
-  src/p44utils/thirdparty/civetweb/civetweb.h \
-  src/p44utils/thirdparty/civetweb/handle_form.inl \
-  src/p44utils/thirdparty/civetweb/md5.inl \
-  src/p44utils/thirdparty/civetweb/sha1.inl \
-  src/p44utils/thirdparty/civetweb/hostcheck.inl \
-  src/p44utils/thirdparty/civetweb/openssl_hostname_validation.inl \
   src/p44utils/application.cpp \
   src/p44utils/application.hpp \
   src/p44utils/consolekey.cpp \
