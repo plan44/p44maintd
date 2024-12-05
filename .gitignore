@@ -1,0 +1,25 @@
+docs/DoxygenDocs.docset/
+*~
+
+# XCode specifics
+**/*.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate
+**/*.xcodeproj/project.xcworkspace/xcshareddata/*.xcscmblueprint
+**/*.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+**/*.xcodeproj/xcuserdata/
+
+# Autotools specifics
+*.o
+Makefile
+Makefile.in
+autom4te.cache/
+aclocal.m4
+config.h
+config.h.in
+config.log
+config.status
+configure
+configure_aux/
+.dirstamp
+.deps/
+stamp-h1
+p44maintd

@@ -1,0 +1,7 @@
+[submodule "p44maintd_int/src/p44utils"]
+	path = src/p44utils
+	url = ../p44vdc.git
+[submodule "p44maintd_int/src/p44maintd_common"]
+	path = src/p44maintd_common
+	url = ../p44maintd_common.git
+	branch = main
